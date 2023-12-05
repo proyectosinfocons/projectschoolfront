@@ -1,0 +1,59 @@
+
+
+<div class="sidenav">
+    <div class="login-main-text">
+       <h2>Sistema<br> Estudiantil</h2>
+       <p>Ingrese tu codigo de estudiante</p>
+    </div>
+  </div>
+  
+  <form #loginForm="ngForm">
+  
+    <div class="inputGroup inputGroup1" style="text-align: center">
+      <img src="https://img.freepik.com/vector-premium/logotipo-letras-inglesas-abc-o-icono-cursos-escolares-aprendizaje-ninos-dibujos-animados-planos-clase-idioma-infantil_101884-1372.jpg" width="260px" height="260px"/>
+      <label>EL ABC DEL SABER</label> 
+  
+    </div>
+  
+    <div class="inputGroup inputGroup1">
+      <label for="email1">Usuario</label>
+      <input type="text" id="email" name="email" [(ngModel)]="usuario" class="email" maxlength="256" required/>
+      <p class="helper helper1">Introduzca su usuario</p>
+      <span class="indicator"></span>
+    </div>
+    <div class="inputGroup inputGroup1">
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" [(ngModel)]="clave" class="password" required minlength="8" maxlength="16"
+      />    <p class="helper helper1">Introduzca su contraseña</p>
+      <span class="indicator"></span>
+  
+    </div>
+    <div class="inputGroup inputGroup3">
+      <button id="login" type="button" (click)="iniciarSesion()" >Iniciar Sesión
+        <i class="fa fa-sign-in" aria-hidden="true"></i>
+      </button>
+      <div style="text-align: right ;height: 12px;width: 180px;">
+  
+       <a routerLink="/nuevo" style="text-align: right;">Nuevo Usuario</a>
+  
+  
+    </div>
+  
+  
+    <div style="text-align: left;height: 15px;width: 150px; ">
+  
+  
+      <a routerLink="/recuperar" style="text-align: left;">¿Olvidaste tu contraseña?</a>
+  
+   </div>
+  
+    
+  
+  
+  
+  
+      
+    </div>
+  
+    
+  </form>

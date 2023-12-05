@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  HOST: 'http://TU_IP_PUBLICA/mediapp-backend'
 };

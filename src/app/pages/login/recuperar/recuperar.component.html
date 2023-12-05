@@ -1,0 +1,39 @@
+<div class="sidenav">
+    <div class="login-main-text">
+       <h2>Sistema<br> Estudiantil</h2>
+       <p>Ingrese tu codigo de estudiante</p>
+    </div>
+  </div>
+  
+  <form #loginForm="ngForm">
+  
+    <div class="inputGroup inputGroup1" style="text-align: center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRymEvcsFLjxd7Sb716lH_0Ey69EEVdrP60brT7ODFjpIlfwaWwgvn4A_f2qvWcYynkPI&usqp=CAU" width="260px" height="260px"/>
+      <label>Recuperar cuenta</label> 
+  
+    </div>
+  
+    <div class="inputGroup inputGroup1">
+      <label for="email1">Usuario</label>
+      <input type="text" id="email" name="email"  class="email" maxlength="256" required/>
+      <span class="indicator"></span>
+    </div>
+ 
+    <div class="inputGroup inputGroup3" type="button">
+      <button id="login" type="button" >Recuperar
+        <i class="fa fa-sign-in" aria-hidden="true"></i>
+      </button>
+      <br>
+   
+      <button id="login" routerLink="/login" type="button" >Volver
+        <i class="fa fa-sign-in" aria-hidden="true"></i>
+      </button>
+  
+  
+  
+  
+      
+    </div>
+  
+    
+  </form>
